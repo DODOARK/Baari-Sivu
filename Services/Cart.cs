@@ -16,4 +16,9 @@ public class Cart
     {
         shopping.RemoveAt(id - 1);
     }
+
+    public List<Drink> GetShoppingList()
+    {
+        return shopping;
+    }
 }
