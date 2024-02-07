@@ -14,9 +14,25 @@
             <th scope="col">Price</th>
             <th scope="col">Size</th>
             <th scope="col">Alcohol</th>
-            <th scope="col">Delete</th>
+            <th scope="col">Buy</th>
         </tr>
     </thead>
+     <tbody>
+    @foreach (var drink in Model.DrinkList)
+    {
+        <tr>
+            <td>@drink.Name</td>
+            <td>@($"{drink.Price:C}")</td>
+            <td>@drink.Size</td>
+            <td>@drink.Alcohol</td>
+            <td>
+                <form method="post" asp-page-handler="AddToCart" asp-route-Drink="@drink">
+                    <button class="btn btn-danger">Add to cart</button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
 </table>
 
 

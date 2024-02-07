@@ -15,8 +15,11 @@ public class JuomaListModel : PageModel
     private readonly DrinkList _service;
     public List<Drink> DrinkList { get;set; } = default!;
 
-    public JuomaListModel(DrinkList service)
+    private Cart _shoppingCart;
+
+    public JuomaListModel(DrinkList service, Cart cart)
     {
+        _shoppingCart = cart;
         _service = service;
     }
 
@@ -25,16 +28,12 @@ public class JuomaListModel : PageModel
         DrinkList = _service.GetDrinks();
     }
 
-    /*public IActionResult OnPost()
+    public IActionResult OnPostAddToCart(Drink drink)
     {
-        if (!ModelState.IsValid || NewDrink == null)
-        {
-            return Page();
-        }
-
-        _service.Add(Newdrink);
+        _shoppingCart.AddDrink(drink);
 
         return RedirectToAction("Get");
-    }*/
+    }
+
 }
 
