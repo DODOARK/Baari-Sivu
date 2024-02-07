@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aBVdCb16Z/n6/XKrhUtXTFCq4/AFKHrDKAwKLSQ8h42I2CIsQfcyft4owwB5N0UVDGiFA2wSM2lD86Bs1/XVGg==",
+  "dgSpecHash": "Yg5ZpHNZLaAvcfgyjw0oDimdu+hj5n+rCoh8siincEAkSjwvJGtulOWxiiwqvHWmthL9RxWi89yKadaFyjFKAA==",
   "success": true,
-  "projectFilePath": "C:\\C#\\Baari-Sivu\\Pohja\\baari-sivu\\baari-sivu.csproj",
+  "projectFilePath": "/workspaces/Baari-Sivu/baari-sivu.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
