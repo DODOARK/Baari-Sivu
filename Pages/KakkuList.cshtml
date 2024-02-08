@@ -1,10 +1,10 @@
 ﻿@page
-@model JuomaListModel
+@model KakkuListModel
 @{
-    ViewData["Title"] = "Drink List";
+    ViewData["Title"] = "Cake List";
 }
 
-<h1>Drink List</h1>
+<h1>Cake List</h1>
 
 
 <table class="table mt-5">
@@ -13,20 +13,18 @@
             <th scope="col">Name</th>
             <th scope="col">Price</th>
             <th scope="col">Size</th>
-            <th scope="col">Alcohol</th>
             <th scope="col">Buy</th>
         </tr>
     </thead>
      <tbody>
-    @foreach (var drink in Model.DrinkList)
+    @foreach (var kakku in Model.KakkuList)
     {
         <tr>
-            <td>@drink.Name</td>
-            <td>@($"{drink.Price:C}")</td>
-            <td>@drink.Size</td>
-            <td>@drink.Alcohol</td>
+            <td>@kakku.Name</td>
+            <td>@($"{kakku.Price:C}")</td>
+            <td>@kakku.Size</td>
             <td>
-                <form method="post" asp-page-handler="AddToCart" asp-route-Drink="@drink">
+                <form method="post" asp-page-handler="AddToCart" asp-route-Kakku="@kakku">
                     <button class="btn btn-danger">Add to cart</button>
                 </form>
             </td>
