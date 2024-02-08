@@ -1,0 +1,40 @@
+﻿@page
+@model KakkuListModel
+@{
+    ViewData["Title"] = "Cake List";
+}
+
+<h1>Cake List</h1>
+
+
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Type</th>
+            <th scope="col">Buy</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var kakku in Model.KakkuList)
+        {
+            <tr>
+                <td>@kakku.Name</td>
+                <td>@($"{kakku.Price:C}")</td>
+                <td>@kakku.Type</td>
+                <td>
+                    <form method="post" asp-page-handler="AddToCart" asp-route-Cake="@kakku">
+                        <button class="btn btn-danger">Add to cart</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
