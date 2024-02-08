@@ -1,7 +1,10 @@
+using baari_sivu.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddScoped<Cart>();
 
 var app = builder.Build();
 
