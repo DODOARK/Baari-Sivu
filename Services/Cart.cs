@@ -5,9 +5,9 @@ namespace baari_sivu.Services;
 
 public class Cart
 {
-    List<Kakku> shopping = new List<Kakku>();
+    List<Cake> shopping = new List<Cake>();
 
-    public void AddCake(Kakku kakku)
+    public void AddCake(Cake kakku)
     {
         shopping.Add(kakku);
     }

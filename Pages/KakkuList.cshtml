@@ -12,19 +12,19 @@
         <tr>
             <th scope="col">Name</th>
             <th scope="col">Price</th>
-            <th scope="col">Size</th>
+            <th scope="col">Type</th>
             <th scope="col">Buy</th>
         </tr>
     </thead>
      <tbody>
-    @foreach (var kakku in Model.KakkuList)
+    @foreach (var kakku in Model.KakkuService)
     {
         <tr>
             <td>@kakku.Name</td>
             <td>@($"{kakku.Price:C}")</td>
-            <td>@kakku.Size</td>
+            <td>@kakku.Type</td>
             <td>
-                <form method="post" asp-page-handler="AddToCart" asp-route-Kakku="@kakku">
+                <form method="post" asp-page-handler="AddToCart" asp-route-Cake="@kakku">
                     <button class="btn btn-danger">Add to cart</button>
                 </form>
             </td>
