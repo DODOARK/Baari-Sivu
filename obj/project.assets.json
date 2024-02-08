@@ -10079,19 +10079,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tivi\\.nuget\\packages\\": {}
+    "C:\\Users\\ottor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\C#\\Baari-Sivu\\Pohja\\Baari-Sivu\\baari-sivu.csproj",
+      "projectUniqueName": "C:\\Users\\ottor\\Documents\\kakkuu\\Baari-Sivu\\baari-sivu.csproj",
       "projectName": "baari-sivu",
-      "projectPath": "C:\\C#\\Baari-Sivu\\Pohja\\Baari-Sivu\\baari-sivu.csproj",
-      "packagesPath": "C:\\Users\\Tivi\\.nuget\\packages\\",
-      "outputPath": "C:\\C#\\Baari-Sivu\\Pohja\\Baari-Sivu\\obj\\",
+      "projectPath": "C:\\Users\\ottor\\Documents\\kakkuu\\Baari-Sivu\\baari-sivu.csproj",
+      "packagesPath": "C:\\Users\\ottor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ottor\\Documents\\kakkuu\\Baari-Sivu\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tivi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ottor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10151,7 +10151,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
